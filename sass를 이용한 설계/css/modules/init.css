@@ -1,0 +1,39 @@
+/*! init.css @ 2017, sangwon  */
+@font-face {
+  font-family: 'Nanum Square';
+  font-weight: 400;
+  src: url("../fonts/Nanum Square/NanumSquareOTFRegular.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square ExtraB';
+  font-weight: 400;
+  src: url("../fonts/Nanum Square/NanumSquareOTFExtraBold.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square Light';
+  font-weight: 400;
+  src: url("../fonts/Nanum Square/NanumSquareOTFLight.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square Bold';
+  font-weight: 700;
+  src: url("../fonts/Nanum Square/NanumSquareOTFBold.otf");
+}
+html{
+    font-size: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    margin: 0;
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: 'Nanum Square';
+}

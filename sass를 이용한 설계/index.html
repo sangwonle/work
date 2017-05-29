@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>shoppingmall &lt; yuyu.com</title>
+  <link rel="stylesheet" href="./css/modules/init.css">
+  <link rel="stylesheet" href="./css/modules/grid.css">
+</head>
+<body class="show-grid">
+<div class="wrapper">
+    <div class="container">
+        <div class="row mb-x2 is-isolate" aria-label="banner">
+            <div class="col is-3" aria-labelledby="heading-shopping">
+                <h1 id="heading-shopping" class="logo"><a href="#"><img src="../work/images/header/logo.svg" alt="shopping - logo" /></a></h1>
+            </div>
+            <div class="col is-2 o-11">
+                <ul class="info-menu">
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </div>
+            <div class="col is-5 o-5">
+                <form action="javascript:alert('검색이 완료되었습니다.')" id="search-form" role="search">
+                    <fieldset>
+                        <legend>검색 폼</legend>
+                        <input type="search" aria-label="검색어 입력" placeholder="검색어를 입력하세요.">
+                        <span id="placeholder-search" class="a11y-hidden">검색어를 입력하세요.</span>
+                        <button type="submit">검색</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- (s) 네비게이션 -->
+    <div class="row">
+        <div class="container ov-h">
+            <div class="col is-12 mb-x1" role="navigation">
+                <h2 class="a11y-hidden">메인메뉴</h2>
+                <div class="navigation " aria-label="메인메뉴">
+                    <ul>
+                        <li><a href="#">MAIN</a></li>
+                        <li><a href="#">BRAND</a></li>
+                        <li><a href="#">SPECIAL</a></li>
+                        <li><a href="#">OUTER</a></li>
+                        <li><a href="#">TOPS</a></li>
+                        <li><a href="#">BOTTOM</a></li>
+                        <li><a href="#">DRESS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">BAG</a></li>
+                        <li><a href="#">ACC</a></li>
+                        <li><a href="#">SUMMER</a></li>
+                        <li><a href="#">ETC</a></li>
+                    </ul>
+                </div>            
+            </div>
+        </div>
+        <!-- (s) 필터메뉴 -->
+        <div class="row filter" aria-label="필터 설정 메뉴">      
+            <div class="filter-bg"></div>
+            <div class="container" aria-labelledby="filter-detail">
+                <div class="col is-12">
+                    <h3 class="filter-heading mb-x2"><a href="#none">필터를 선택하세요</a></h3>
+                    <div id="filter-detail" class="filter-detail" >
+                        <dl>
+                            <dt>연령대</dt>
+                            <dd><a href="#" class="ft-active">10 대</a></dd>
+                            <dd><a href="#" class="ft-active">20 대</a></dd>
+                            <dd><a href="#" class="ft-active">30 대</a></dd>
+                        </dl>
+                        <dl class="mb-x1">
+                            <dt>스타일</dt>
+                            <dd><a href="#" class="ft-active">소녀룩</a></dd>
+                            <dd><a href="#">모던시크</a></dd>
+                            <dd><a href="#">심플베이지</a></dd>
+                            <dd><a href="#">로맨틱</a></dd>
+                            <dd><a href="#">오피스룩</a></dd>
+                            <dd><a href="#">캠퍼스룩</a></dd>
+                            <dd><a href="#">빈티지</a></dd>
+                            <dd><a href="#">트레이닝</a></dd>
+                        </dl>    
+                        <div class="filter-btn">                 
+                            <button type="button">초기화</button>
+                            <button type="submit">필터 선택 완료</button>
+                        </div>                
+                    </div>
+                </div>                
+            </div>                     
+        </div>
+        <!-- (e) 필터메뉴 -->
+    </div>
+    <!-- (e) 네비게이션 --> 
+    <!-- (s) 컨텐츠 영역 --> 
+    <div class="container">       
+        <div class="row mb-x2" role="main">
+            <div class="col is-12 mb-x2"  >
+                <div class="visual" aria-labelledby="visual">
+                    <h2 id="visual" class="a11y-hidden">메인 콘텐츠 비주얼 영역</h2>
+                    <ul >
+                        <li><img src="../work/images/banner/banner-01.jpg"  alt="메인 상품 이미지" /></li>
+                    </ul>
+                    <div class="pager-item">
+                        <a href="#" role="button" aria-label="메인 상품 이미지 1">1</a>
+                        <a href="#" role="button" aria-label="메인 상품 이미지 2">2</a>
+                        <a href="#" role="button" aria-label="메인 상품 이미지 3">3</a>
+                        <a href="#" role="button" aria-label="메인 상품 이미지 4">4</a>
+                        <a href="#" role="button" aria-label="메인 상품 이미지 5">5</a> 
+                        <a href="#" role="button" aria-label="메인 상품 이미지 6">6</a>
+                    </div>    
+                </div>            
+            </div>
+            <!-- (s) 베스트 셀러  -->
+            <div class="row mb-x2">                
+                <div class="col is-12 is-nesting " aria-labelledby="bestseller" role="group">
+                    <h2 id="bestseller" class="mb-x1">베스트 셀러</h2>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-01.jpg" alt="베스트 셀러 Zemma World - Puppy-코튼니트">
+                                <figcaption><span>Zemma World</span> Puppy 코튼니트</figcaption>
+                            </figure>
+                            <em>39,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                    </div>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-02.jpg" alt="베스트 셀러 myblin - 버튼 체크 원피스">
+                                <figcaption><span>myblin</span> 버튼 체크 원피스</figcaption>
+                            </figure>
+                            <em>41,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                    </div>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-03.jpg" alt="베스트 셀러 BULLAN GIRL - 아미라벨맨투맨">
+                                <figcaption><span>BULLAN GIRL</span> 아미라벨맨투맨</figcaption>
+                            </figure>
+                            <em>12,500원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                    </div>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-04.jpg" alt="베스트 셀러 MINIBBONG - Night-스키니팬츠">
+                                <figcaption><span>MINIBBONG</span> Night-스키니팬츠</figcaption>
+                            </figure>
+                            <em>29,900원</em>
+                        </a>
+                        <button type="submit" class="like-icon off">좋아요</button>
+                    </div>
+                </div>               
+            </div>
+            <!-- (e) 베스트 셀러  -->
+            <!-- (s) 브랜드 -->
+            <div class="row mb-x2">
+                <div class="col is-12 is-nesting post " aria-labelledby="brand" role="group">
+                    <h2 id="brand" class="mb-x1">브랜드</h2>
+                    <div class="col is-12 brand">                    
+                        <ul>
+                            <li>
+                                <a href="#none">
+                                    <em>mixxmix</em>
+                                    <span>01. mixxmix</span>
+                                    <p><img src="../work/images/brand/brand-01.jpg" alt="mixxmix" /></p>
+                                </a>
+                                <button type="submit" class="brand-btn">mixxmix 좋아요</button>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <em>REINE</em>
+                                    <span>02. REINE</span>
+                                    <p><img src="../work/images/brand/brand-02.jpg" alt="REINE" /></p>
+                                </a>
+                                <button type="submit" class="brand-btn">mixxmix 좋아요</button>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <em>BANHALA</em>
+                                    <span>03. BANHALA</span>
+                                    <p><img src="../work/images/brand/brand-03.jpg" alt="BANHALA" /></p>
+                                </a>
+                                <button type="submit" class="brand-btn">mixxmix 좋아요</button>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <em>CHERRYKOKO</em>
+                                    <span>04. CHERRYKOKO</span>
+                                    <p><img src="../work/images/brand/brand-04.jpg" alt="CHERRYKOKO" /></p>
+                                </a>
+                                <button type="submit" class="brand-btn">mixxmix 좋아요</button>
+                            </li>
+                        </ul>                    
+                    </div>
+                    <div class="brand-control">
+                        <a href="#" class="prev">prev</a>
+                        <a href="#" class="next">next</a>
+                    </div>               
+                </div>
+            </div>
+            <!-- (e) 브랜드 -->
+            <!-- (s) 신상품  -->
+            <div class="row mb-x2">                
+                <div class="col is-12 is-nesting" aria-labelledby="newitem" role="group">
+                    <h2 id="newitem" class="mb-x1">신상품</h2>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-01.jpg" alt="Monobabie - 엘렌 니트원피스">
+                                <figcaption><span>Monobabie</span> 엘렌 니트원피스</figcaption>
+                            </figure>
+                            <em>39,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                    </div>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-02.jpg" alt="From Beginning - Ohkoos vintage Knit">
+                                <figcaption><span>From Beginning</span> Ohkoos vintage Knit</figcaption>
+                            </figure>
+                            <em>41,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                    </div>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-03.jpg" alt="Zemma World - Tied-골지니트">
+                                <figcaption><span>Zemma WorldL</span> Tied-골지니트</figcaption>
+                            </figure>
+                            <em>12,500원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                    </div>
+                    <div class="col is-3 best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/new-items/new-product-04.jpg" alt="daily monday - Buckle Wrap mini skirt">
+                                <figcaption><span>daily monday</span> Buckle Wrap mini skirt</figcaption>
+                            </figure>
+                            <em>29,900원</em>
+                        </a>
+                        <button type="submit" class="like-icon off">좋아요</button>
+                    </div>
+                </div>               
+            </div>
+            <!-- (e) 신상품  -->
+            <!-- (s) 언니 팁  -->
+            <div class="row mb-x2 tip">
+                <div class="col is-12 is-nesting" aria-labelledby="tip" role="group">
+                    <h2 id="tip" class="mb-x1">언니의 팁</h2>
+                    <div class="col is-12"  aria-label="언니의 팁">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="../work/images/tip/product-1.jpg" alt="기획전 활용만점 가을원피스"></a>
+                            </li>                            
+                            <li>
+                                <a href="#"><img src="../work/images/tip/product-2.jpg" alt="가을엔 체크무늬! 지금 코디 Check하기!"></a>
+                            </li>                            
+                            <li>
+                                <a href="#"><img src="../work/images/tip/product-3.jpg" alt="가볍게 들기 좋은 데일리 백"></a>
+                            </li> 
+                        </ul>
+                        <div class="tip-pager-item">
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 1">1</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 2">2</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 3">3</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 4">4</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 5">5</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 6">6</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 7">7</a>
+                            <a href="#none" role="button" aria-label="언니의 팁 상품 이미지 8">8</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- (e) 언니 팁  -->
+            <div class="row">
+                <div class="col is-12 is-nesting" aria-labelledby="bestview" role="group">
+                    <h2 id="bestview" class="mb-x1">베스트리뷰</h2>
+                    <div class="col is-2 view best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/best-review/bs-product-01.jpg" alt="따뜻해줘 가디건 - 배송은 쇼핑몰에서 입고가 늦어져서 ...">
+                                <figcaption><span>따뜻해줘 가디건</span> 배송은 쇼핑몰에서 입고가 늦어져서 ...</figcaption>
+                            </figure>
+                            <em>31,900원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                        <div class="star-icon" aria-label="5점 만 점">
+                            <img src="../work/images/icons/star-icons.png" alt="5점 만점에 1점" />
+                        </div>
+                    </div>
+                    <div class="col is-2 view best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/best-review/bs-product-02.jpg" alt="따뜻해줘 가디건 - 배송은 쇼핑몰에서 입고가 늦어져서 ...">
+                                <figcaption><span>버클트임박시후드</span> 후기를 너무 늦게 썼네요ㅠ 딱 제가 ...</figcaption>
+                            </figure>
+                            <em>30,600원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                        <div class="star-icon" aria-label="5점 만 점">
+                            <img src="../work/images/icons/star-icons.png" alt="5점 만점에 1점" />
+                        </div>
+                    </div>
+                    <div class="col is-2 view best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/best-review/bs-product-03.jpg" alt="따뜻해줘 가디건 - 배송은 쇼핑몰에서 입고가 늦어져서 ...">
+                                <figcaption><span>Chic-자켓</span> 어깨가 좀 있는 편이어서 오버핏으...</figcaption>
+                            </figure>
+                            <em>49,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                        <div class="star-icon" aria-label="5점 만 점">
+                            <img src="../work/images/icons/star-icons.png" alt="5점 만점에 1점" />
+                        </div>
+                    </div>
+                    <div class="col is-2 view best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/best-review/bs-product-04.jpg" alt="따뜻해줘 가디건 - 배송은 쇼핑몰에서 입고가 늦어져서 ...">
+                                <figcaption><span>마실로 루즈핏 니...</span> 베이지색상 가디건 필요했었는데 마침...</figcaption>
+                            </figure>
+                            <em>19,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                        <div class="star-icon" aria-label="5점 만 점">
+                            <img src="../work/images/icons/star-icons.png" alt="5점 만점에 1점" />
+                        </div>
+                    </div>
+                    <div class="col is-2 view best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/best-review/bs-product-05.jpg" alt="따뜻해줘 가디건 - 배송은 쇼핑몰에서 입고가 늦어져서 ...">
+                                <figcaption><span>멜라니 트렌치 코트</span> 멜라니 트렌치 코트</figcaption>
+                            </figure>
+                            <em>19,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                        <div class="star-icon" aria-label="5점 만 점">
+                            <img src="../work/images/icons/star-icons.png" alt="5점 만점에 1점" />
+                        </div>
+                    </div>
+                    <div class="col is-2 view best">
+                        <a href="#none">
+                            <figure>
+                                <img src="../work/images/best-review/bs-product-06.jpg" alt="따뜻해줘 가디건 - 배송은 쇼핑몰에서 입고가 늦어져서 ...">
+                                <figcaption><span>Luci-브이넥니트</span> 노랑노랑하니 봄분위기 나고좋아...</figcaption>
+                            </figure>
+                            <em>24,000원</em>
+                        </a>
+                        <button type="submit" class="like-icon">좋아요</button>
+                        <div class="star-icon" aria-label="5점 만 점">
+                            <img src="../work/images/icons/star-icons.png" alt="5점 만점에 1점" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- (s) 컨텐츠 영역 --> 
+    <!-- (s) 푸터 영역 --> 
+    <div class="footer" role="contentinfo">        
+        <div class="row guide mb-x2">
+            <div class="is-12">
+                <ul aria-label="사이트 이용안내">
+                    <li><a href="#">YOUYU 소개</a></li>
+                    <li><a href="#">통합배송</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관,개인정보</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row is-isolate">
+                <div class="col is-8">
+                    <address class="address" aria-label="shopping 주소 연락처">
+                        <em>Company.</em>  YOUYU <em>대표이사.</em>  이정희 <em>개인정보관리책임자.</em>  이정희 <em>사업자번호.</em>  123-45-67890<br />
+                        <em>통신판매업신고.</em>  2016-성남분당-1234 <em>주소.</em>  경기 성남시 분당구 판교역로 221 102호 <em>대표번호.</em>  1234-5678
+                    </address>
+                    <div class="copyright mb-x1">Copyright ⓒ 2016 YOUYU Co,. Ltd. All rights reserved.</div>
+                    <div class="sns" role="group">
+                        <ul>
+                            <li><a href="#" title="wechat 새창 열림" target="_blank">wechat</a></li>
+                            <li><a href="#" title="taobao 새창 열림" target="_blank">taobao</a></li>
+                            <li><a href="#" title="facebook 새창 열림" target="_blank">facebook</a></li>
+                            <li><a href="#" title="weibo 새창 열림" target="_blank">weibo</a></li>
+                            <li><a href="#" title="instagram 새창 열림" target="_blank">instagram</a></li>
+                            <li><a href="#" title="partner - codibook 새창 열림" target="_blank">partner - codibook</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col is-2 o-11 customer" aria-label="고객센터 정보">
+                    <h2>고객센터</h2>
+                    <strong>1234-5678</strong>
+                    <p>월~금  11AM ~ 6PM</p>
+                    <p>12:30 ~ 1:30PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- (e) 푸터 영역 --> 
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="./js/toggleGrid.js"></script>
+<script>
+     $(function(){      
+        $(".filter-heading a").on("click", function(){
+            $(".filter-bg").toggleClass("on")
+            $(".filter-detail").toggleClass("on")
+        });
+        $(".filter-detail a").click(function(e){
+            e.preventDefault(); // 기본 취소
+            $("a").addClass("ft-active")// this 부모 부모에 클래스 추가
+            .siblings().removeClass("ft-active");// siblings 형제 레벨 찾음
+        });     
+
+    });  
+</script>
+</body>
+</html>
