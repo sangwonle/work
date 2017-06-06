@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table coding</title>
+    <link rel="stylesheet"  href="./css/style.css">
+</head>
+<body>
+   <h1 class="h1-heading"><a href="#">Mailbox CRM</a></h1>
+    <table class="wrapper">
+        <thead>
+            <tr>
+                <th scope="col" class="th-1"><button type="submit" class="compese-btn">COMPOSE</button></th>
+                <th scope="col" class="th-2">
+                    <table class="icons-menu">
+                        <caption>게시판 아이콘 메뉴</caption>
+                        <tr>
+                            <th class="checkbox"><label for="mail_all_checks" class="a11y-hidden">메일 전체 체크박스</label><input type="checkbox" id="mail_all_checks"></th>
+                            <th class="refresh"><a href="#">새로고침</a></th>
+                            <th class="archive"><a href="#">파일저장</a></th> 
+                            <th class="spam"><a href="#">스팸</a></th>
+                            <th class="delete"><a href="#">휴지통</a></th>
+                            <th class="folder"><a href="#">파일묶음</a></th>
+                            <th class="label"><a href="#">상표</a></th>
+                        </tr>
+                    </table>
+                </th>
+                <th  scope="col" class="th-3"><input type="search" name="mail-search" value="Search" placeholder="Search"><button type="submit" class="search-btn">검색</button></th>
+                <th  scope="col" class="th-4">
+                    <table class="page-menu">
+                        <caption>순서 메뉴 및 환경설정</caption>
+                        <tr>                            
+                            <th>1-10 of 100</th>
+                            <th class="prve"><a href="#">왼쪽</a></th> 
+                            <th class="next"><a href="#">오른쪽</a></th>
+                            <th class="settings"><a href="#">환경설정</a></th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr class="tr-top">
+                <th scope="rowgroup">
+                    <table class="group1">
+                        <caption>왼쪽 콘텐츠 그룹</caption>
+                        <tr>
+                            <td>
+                                <table class="gr1">
+                                    <caption>왼쪽 콘텐츠 메뉴</caption>                                    
+                                    <tr>
+                                        <th class="inbox"><a href="#" ><em>Inbox</em><span>4</span></a></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="draft"><a href="#" ><em>Draft</em><span>1</span></a></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sent-mail"><a href="#" ><em>Sent Mail</em><span>3</span></a></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="trash"><a href="#" ><em>Trash</em><span>21</span></a></th>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr class="tr-top">
+                            <td>
+                                <table class="gr2">
+                                    <caption>왼쪽 콘텐츠  안내메뉴</caption>
+                                    <tr>
+                                        <th class="project"><a href="#">Project</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="web"><a href="#">Web</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="home"><a href="#">Home</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="work"><a href="#">Work</a></th>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                       
+                    </table>
+                </th>
+                <th scope="rowgroup" colspan="3" class="tr-left">
+                    <table class="group2">
+                        <caption>오른쪽 콘텐츠 리스트</caption>
+                        <tr>
+                            <td><label for="mail_check1" class="a11y-hidden">메일 체크박스</label><input type="checkbox" id="mail_check1"></td>
+                            <td><input id="favorite-check1" type="checkbox"><label for="favorite-check1" class="star">즐겨찾기</label></td>
+                            <td><a href="#" class="circle-orange text-int">오렌지색 원형아이콘</a></td>
+                            <td><a href="#" class="profile-pk">A</a></td>
+                            <td class="txt-align"><a href="#" class="name">Google Inc</a></td>
+                            <td class="txt-align"><a href="#" class="txt">Adwords Keyword Research For Beginners</a></td>
+                            <td><button type="submit" class="file-btn  text-int">첨부파일</button></td>
+                            <td>07:24 AM</td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail_check1" class="a11y-hidden">메일 체크박스</label><input type="checkbox" id="mail_check2"></td>
+                            <td><input id="favorite-check2" type="checkbox"><label for="favorite-check2" class="star">즐겨찾기</label></td>
+                            <td><a href="#" class="circle-orange text-int">오렌지색 원형아이콘</a></td>
+                            <td><a href="#" class="profile-ong">G</a></td>
+                            <td class="txt-align"><a href="#" class="name">Google Inc</a></td>
+                            <td class="txt-align"><a href="#" class="txt">Adwords Keyword Research For Beginners</a></td>
+                            <td><button type="submit" class="file-btn  text-int">첨부파일</button></td>
+                            <td>07:24 AM</td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail_check1" class="a11y-hidden">메일 체크박스</label><input type="checkbox" id="mail_check3"></td>
+                            <td><input id="favorite-check3" type="checkbox"><label for="favorite-check3" class="star">즐겨찾기</label></td>
+                            <td><a href="#" class="circle-orange text-int">오렌지색 원형아이콘</a></td>
+                            <td><a href="#" class="profile-pk">A</a></td>
+                            <td class="txt-align"><a href="#" class="name">Google Inc</a></td>
+                            <td class="txt-align"><a href="#" class="txt">Adwords Keyword Research For Beginners</a></td>
+                            <td><button type="submit" class="file-btn  text-int">첨부파일</button></td>
+                            <td>07:24 AM</td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail_check1" class="a11y-hidden">메일 체크박스</label><input type="checkbox" id="mail_check4"></td>
+                            <td><input id="favorite-check4" type="checkbox"><label for="favorite-check4" class="star">즐겨찾기</label></td>
+                            <td><a href="#" class="circle-orange text-int">오렌지색 원형아이콘</a></td>
+                            <td><a href="#" class="profile-img"></a></td>
+                            <td class="txt-align"><a href="#" class="name">Google Inc</a></td>
+                            <td class="txt-align"><a href="#" class="txt">Adwords Keyword Research For Beginners</a></td>
+                            <td><button type="submit" class="file-btn  text-int">첨부파일</button></td>
+                            <td>07:24 AM</td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail_check1" class="a11y-hidden">메일 체크박스</label><input type="checkbox" id="mail_check5"></td>
+                            <td><input id="favorite-check5" type="checkbox"><label for="favorite-check5" class="star">즐겨찾기</label></td>
+                            <td><a href="#" class="circle-orange text-int">오렌지색 원형아이콘</a></td>
+                            <td><a href="#" class="profile-pk">A</a></td>
+                            <td class="txt-align"><a href="#" class="name">Google Inc</a></td>
+                            <td class="txt-align"><a href="#" class="txt">Adwords Keyword Research For Beginners</a></td>
+                            <td><button type="submit" class="file-btn  text-int">첨부파일</button></td>
+                            <td>07:24 AM</td>
+                        </tr>
+                      
+                      
+
+                    </table>
+                </th>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>

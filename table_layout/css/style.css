@@ -1,0 +1,375 @@
+@charset "utf-8";
+/*@import url(fonts.css);*/
+@import "fonts.css";
+@import "normalize.css";
+/* 스타일 초기화 */
+html, body{
+    margin:0; 
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    line-height: 1.2;
+    background: #fff;
+    color: #999;   
+    font-size: 1.2rem;
+    font-family: 'Noto Sans Regular', sans-serif;
+}
+/* 건너띄기 링크와 숨김 컨텐츠 */
+.a11y{
+    position: absolute;
+    left: -99em;
+}
+.a11y:focus{
+    left: 50%;
+	/*margin-left: -50px;*/
+    transform: translateX(-50%);
+	padding: 5px 10px;
+	color: #fff;
+	background: #000;
+	outline: 0;
+	z-index: 10;
+}
+.a11y-hidden, legend, caption{
+    position: absolute;
+    width: 1px;
+    height: 1px;  
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);    
+}
+/* 링크스타일 */
+a:link, a:visited{
+    color: inherit; /* inherit 속성 부모에서 상속 받는 */ 
+    text-decoration: none;
+}
+a:hover, a:focus{
+    color: #f00
+}
+/* wrapper */
+.wrapper{    
+    min-width: 1140px;
+    width: 1140px;
+    height: auto;
+    margin: 0 auto;
+}
+.h1-heading{
+    width: 1140px;
+    height: 30px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+.h1-heading a{
+    color: #6d6d6d;
+   
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.txt-align{
+    text-align: left;
+}
+.mt-x1{
+    margin-top: 31px;
+}
+.mt-x2{
+    margin-top: 62px;
+}
+.text-int{
+    text-indent: -9999em;
+}
+[class^="circle"]{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 15px;
+}
+.circle-red{
+    background: red;
+}
+.circle-orange{
+    background: orange;
+}
+.circle-purple{
+    background: rebeccapurple;
+}
+.circle-green{
+    background: green;
+}
+.circle-aqua{
+    background: aqua;
+}
+.circle-blue{
+    background: steelblue;
+}
+
+/* 체크박스 */
+[type="checkbox"]{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+/* 버튼 */
+[type="submit"]{
+   padding: 0;
+   border: none 0;
+   background-color: #fff;
+}
+
+/* 검색 */
+[type="search"]{
+    width : 180px;
+    height: 30px;
+    border: none 0;
+    color: #ccc;
+}
+
+thead tr{
+    height: 90px;
+}
+thead tr th, tbody tr td{
+    padding: 0;
+}
+.th-2,.th-3,.th-4{
+    border-left: 2px solid #f0f0f0;
+}
+/* COMPOSE버튼 */
+.th-1{
+    width: 223px;
+}
+.compese-btn{
+    width: 183px;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 5px;
+    background: #1875f0;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 게시판 아이콘 메뉴 */
+.th-2{
+    width: 380px;
+}
+.icons-menu th a, .search-btn, .page-menu a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+    text-indent: -999em;
+}
+.icons-menu{
+    width: 100%;
+}
+.refresh a{
+    background-position: 0 -95px;
+}
+.archive a{
+    background-position: 0 -118px;
+}
+.spam a{
+    background-position: 0 -142px;
+}
+.delete a{
+    background-position: 0 -71px;
+}
+.folder a{
+    background-position: 0 -116px;
+}
+.label a{
+    background-position: 0 -188px;
+}
+
+/* 검색 */
+.th-3{
+    width: 249px;
+}
+.search-btn{
+    cursor: pointer;
+    background-position: 0 -207px;
+
+}
+/* 순서 메뉴 및 환경설정 */
+.th-4{
+    width: 283px;
+}
+.page-menu{
+    width: 100%;
+}
+.prve a{
+    background-position: 0 -229px;
+}
+.next a{
+    background-position: 0 -249px;
+}
+.settings a{
+    background-position: 0 -270px;
+}
+
+
+.tr-top{
+    vertical-align: top;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+
+}
+.tr-left{  
+    border-left: 2px solid #f0f0f0; 
+}
+
+/* 왼쪽 콘텐츠 그룹 */
+.group1{
+    width: 223px;
+}
+.group1 .tr-top{
+    border-bottom: 0;
+}
+
+/* 왼쪽 콘텐츠 메뉴 */
+.gr1,g2{
+    width: 100%;
+}
+.gr1 th,.gr2 th {
+    text-align: left;
+    padding-left: 28px;
+}
+.trash{
+    padding-bottom: 12px;
+}
+
+.inbox::before,.draft::before,.sent-mail::before,.trash::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.inbox::before{
+    background-position: 0 0;
+}
+.draft::before{
+    background-position: 0 -25px;
+}
+.sent-mail::before{
+    background-position: 0 -48px;
+}
+.trash::before{
+    background-position: 0 -73px;
+}
+
+.gr1 th a{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.gr1 th a em{
+    font-style: normal;
+    display: inline-block;
+    width: 110px;
+}
+.gr1 th span{
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    background: #f5f5f5;
+    color: #b3b3b3;
+    text-align: center;    
+}
+.gr2 th::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 15px;
+    position: relative;
+    left: 5px;
+}
+.project::before{
+    background: red;
+}
+.web::before{
+    background: aqua;
+}
+.home::before{
+    background: rebeccapurple;
+}
+.work::before{
+    background: steelblue;
+}
+
+.gr2 th a{
+    display: inline-block;
+    margin-left: 34px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.group2{
+    width: 915px;
+}
+.group2 tr td{
+    padding: 12px 0 10px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+.star{
+    display: inline-block;
+    width: 20px;
+    height: 0;
+    padding-top: 20px;
+    overflow: hidden;
+    background: url('../images/icons.png') no-repeat;
+    background-position-y: -296px;
+}
+input:checked + .star{
+    background-position-y: -321px;
+}
+[id^="favorite"]{
+    display: none;
+}
+.group2 .profile-pk{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ffe4ec;
+    border-radius: 50%;
+    color: #c92b5f;
+    text-align: center;
+}
+.group2 .profile-ong{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ffe9c5;
+    border-radius: 50%;
+    color: #d36b1e;
+    text-align: center;
+}
+.group2 .profile-img{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url('../images/avatars.png') no-repeat 0 -85px;
+
+}
+.file-btn{
+    width: 20px;
+    height: 14px;
+    background: url('../images/icons.png') no-repeat 0 -345px;
+}
